@@ -19,9 +19,8 @@ elif times_to_send == "scumabit":
         f = random.randint(0,9)
         g = random.randint(0,9)
         finalnumber = str(scumabit)+str(a)+str(b)+str(c)+str(d)+str(e)+str(f)+str(g)
-    message = "ching chong chang chang"
-    pywhatkit.sendwhatmsg_instantly(finalnumber, message)
-    print("success")
+        pywhatkit.sendwhatmsg_instantly(finalnumber, message)
+        print("success")
 else:        
     for i in range(int(times_to_send)):
         pywhatkit.sendwhatmsg_instantly(targetphonenum, message)
